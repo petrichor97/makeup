@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.0.114/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  freemarker:
+    request-context-attribute: request
+  redis:
+    host: 192.168.0.114
+    port: 6379
+    password:
+server:
+  context-path: /sell
+  port: 80
+wechat:
+  # 公众平台测试账号(买家端微信登陆)
+  mpAppId: wx61debf1b5ceac312
+  mpAppSecret: 4b7c4f1372e05e9267cfba6f21c791c2
+  token: tianxuan
+  mchId: 1513132861
+  mchKey: 90ed30933844d94015ae883d7516d315
+  keyPath: D:/JDK/h5.p12
+  notifyUrl: http://petrichor.natapp1.cc/sell/pay/notify
+
+projectUrl:
+  wechatMpAuthorize: http://petrichor.natapp1.cc
+  sell: http://petrichor.natapp1.cc
+
